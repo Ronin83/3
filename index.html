@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NopeSky</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            text-align: center;
+            position: relative;
+        }
+        .container {
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1; /* Ensure the content stays above the decorative elements */
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        p {
+            color: #666;
+            font-size: 18px;
+        }
+        .tagline {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .tagline span {
+            color: #ff5e00;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .tagline span:nth-child(2) {
+            color: #00a3ff;
+            font-family: 'Arial', sans-serif;
+        }
+        .tagline span:nth-child(3) {
+            color: #ff0000;
+            font-family: 'Arial', sans-serif;
+        }
+        .tagline span:nth-child(4) {
+            color: #00ff7a;
+            font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+        }
+        .tagline span:nth-child(5) {
+            color: #ff0000; /* Red */
+            font-family: 'Arial', sans-serif;
+        }
+        /* Button styles */
+        .surprise-button {
+            background-color: #ff5e00;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .surprise-button:hover {
+            background-color: #ff3a00;
+        }
+        /* Button animation */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .surprise-button.animated {
+            animation: pulse 1.5s infinite;
+        }
+        /* Random decorative elements */
+        .decor {
+            position: absolute;
+            z-index: 0;
+            pointer-events: none; /* Ensure the decorative elements don't interfere with user interactions */
+        }
+        /* Example of a blob */
+        .blob {
+            width: 300px;
+            height: 300px;
+            background-color: #ff00ff;
+            border-radius: 50%;
+            top: 200px;
+            left: 100px;
+            transform: rotate(45deg);
+        }
+        /* Example of a blob */
+        .zigzag {
+            width: 400px;
+            height: 200px;
+            background-color: #00ffff;
+            clip-path: polygon(50% 0%, 80% 50%, 50% 100%, 20% 50%);
+            top: 100px;
+            left: 500px;
+            transform: rotate(30deg);
+        }
+        /* Example of a blob */
+        .wave {
+            width: 200px;
+            height: 400px;
+            background-color: #ffff00;
+            clip-path: polygon(0% 50%, 25% 0%, 50% 50%, 75% 100%, 100% 50%, 75% 0%, 50% 50%, 25% 100%);
+            top: 400px;
+            left: 200px;
+            transform: rotate(-45deg);
+        }
+        /* Example of a blob */
+        .hexa-blob {
+            width: 400px;
+            height: 400px;
+            background-color: #00ff00;
+            clip-path: polygon(50% 0%, 100% 38%, 100% 62%, 50% 100%, 0% 62%, 0% 38%);
+            top: 600px;
+            left: 200px;
+            transform: rotate(-15deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hi, I am NopeSky.</h1>
+        <p>Just doin' Gaming and YouTube stuffs.</p>
+        <p>Check out my YouTube channel: <a href="https://www.youtube.com/@ImNotNopeSky">https://www.youtube.com/@ImNotNopeSky</a></p>
+        <p class="tagline">Eat. <span>Sleep.</span> <span>Game.</span> <span>Repeat.</span></p>
+        <!-- Button -->
+        <button class="surprise-button animated" onclick="redirectToSurprise()">Surprise</button>
+    </div>
+    
+    <!-- Random decorative elements -->
+    <div class="decor blob"></div>
+    <div class="decor zigzag"></div>
+    <div class="decor wave"></div>
+    <div class="decor hexa-blob"></div>
+
+    <script>
+        function redirectToSurprise() {
+            window.location.href = "https://youtu.be/dQw4w9WgXcQ?si=XiPcL4HIqw26auql";
+        }
+    </script>
+</body>
+</html>
